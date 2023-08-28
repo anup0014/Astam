@@ -1,21 +1,20 @@
-#WRITTEN BY ANUP
-#FOLLOW : https://github.com/Anupsantra
+#WRITTEN BY MR.DIPTO
+#FOLLOW : https://github.com/MR-DIPTO-404
 #------------- import -------------#
 import os
 from os import system as clr
 import random
 import string 
 from concurrent.futures import ThreadPoolExecutor as tred
-import string 
 import re
 import sys
 import uuid
 import json
 #-------------color----------------#
-bblack="\033[1;30m"         # Red
-M="\033[1;31m"            # Yellow
+bblack="\033[1;30m"         # Black
+M="\033[1;31m"            # Red
 H="\033[1;32m"         # Green
-byellow="\033[1;33m"        # Black
+byellow="\033[1;33m"        # Yellow
 bblue="\033[1;34m"          # Blue
 P="\033[1;35m"        # Purple
 C="\033[1;36m"          # Cyan
@@ -26,8 +25,7 @@ warna = random.choice(my_color)
 oks=[]
 cps=[]
 loop=0
-
-#------------------[ LOGO-LAKNAT ]-----------------#
+#-------------logo-----------------#
 logo=(f'''{B}
 `7MM"""Mq. `7MMF' `7MN.   `7MF'  .g8"""bgd
 {warna}  MM   `MM.  MM     MMN.    M  .dP'     `M
@@ -37,47 +35,12 @@ logo=(f'''{B}
 {warna}  MM         MM     M     YMM  `Mb.     MM
 {B}.JMML.     .JMML. .JML.    YM    `"bmmmdPY
 {warna}--------------------------------------------{B}
- Owner    : {C}MR.Anup{B}
- Guthub   : Anupsantra
- Facebook : Anup Santra 
+ Owner    : {C}MR.DIPTO{B}
+ Guthub   : MR-DIPTO-404
+ Facebook : ADRIAN DIPTO
  Tools    : F{C}/{B}R{C}/{B}G{M} •{warna}[{H}TRAIL{warna}]{warna}
 --------------------------------------------{B}''')
-
-A = '\x1b[1;97m' 
-B = '\x1b[1;96m' 
-C = '\x1b[1;91m' 
-D = '\033[38;5;46m'
-M = '\033[1;31m'
-H = '\033[38;5;46m'
-N = '\x1b[1;37m'    
-E = '\x1b[1;93m' 
-F = '\x1b[1;94m'
-G = '\x1b[1;95m'
-P = '\033[1;37m'
-def fuck():
-    user=[]
-    os.system('clear')
-    os.system('xdg-open https://www.facebook.com/profile.php?id=100089481002124')
-    print(logo)
-    print('[+] SIM CODE BD=> 016•017•018•019')
-    nude = input('\033[1;32m[\033[1;32m?\033[1;32m] SIM CODE : ')
-    nudex = ''.join(random.choice(string.digits) for _ in range(2))
-    nud = ''.join(random.choice(string.digits) for _ in range(2))
-    print('[+] 2000•5000•10000•15000•50000')
-    limit = int(input('[?] ENTER YOUR CRACK LIMIT : '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(4))
-        user.append(nmp)
-        os.system('clear')
-        print(logo)
-        os.system('xdg-open https://www.facebook.com/groups/300845935794614/?ref=share')
-        tl = str(len(user))
-        print('\033[1;37m[\033[1;32m✓\033[1;32m] SIM CODE : '+nude)
-        print('\033[1;37m[\033[1;32m✓\033[1;32m] SOME ID,S WAS LOCKED ')
-        print('\033[1;37m[\033[1;32m✓\033[1;32m] TOOL CREATED BY TURAG JOIN MY GROUP ')
-        print('\033[1;37m[\033[1;32m✓\033[1;32m] TOTAL ID : '+tl)
-        print('\033[1;32m─────────────────────────────────────────────────────────')
-        #-------------linex def -------------#
+#-------------linex def -------------#
 def linex():
     print(f'{warna}--------------------------------------------{B}')
 #-------------clear def -------------#
@@ -91,7 +54,6 @@ def MR_DIPTO():
     print(f'{B} [{warna}01{B}] RANDOM CLONING ')
     print(f'{B} [{warna}00{B}] EXIT TERMINAL ')
     linex()
-    os.system
     option=input(f' {B}[{warna}??{B}] CHOICE MENU >> ')
     if option in ['01','1']:
         BD_CLONING()
@@ -110,6 +72,7 @@ def BD_CLONING():
     except ValueError:
         limit=50000
     clear()
+    os.system('xdg-open https://www.facebook.com/groups/300845935794614/')
     for nmbr in range(limit):
         nmp=''.join(random.choice(string.digits) for _ in range(8))
         user.append(nmp)
