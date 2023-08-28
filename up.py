@@ -1,5 +1,5 @@
 #WRITTEN BY MR.DIPTO
-#FOLLOW : https://github.com/MR-DIPTO-404
+#FOLLOW : https://github.com/Anupsantra
 #------------- import -------------#
 import os
 from os import system as clr
