@@ -1,4 +1,4 @@
-#WRITTEN BY MR.DIPTO
+#WRITTEN BY ANUP
 #FOLLOW : https://github.com/Anupsantra
 #------------- import -------------#
 import os
@@ -36,7 +36,7 @@ logo=(f'''{B}
 {B}.JMML.     .JMML. .JML.    YM    `"bmmmdPY
 {warna}--------------------------------------------{B}
  Owner    : {C}Anupsantra{B}
- Guthub   : Anupsantra 
+ Guthub   : Anupsantra
  Facebook : Anup Santra
  Tools    : F{C}/{B}R{C}/{B}G{M} •{warna}[{H}TRAIL{warna}]{warna}
 --------------------------------------------{B}''')
