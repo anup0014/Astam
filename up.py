@@ -35,9 +35,9 @@ logo=(f'''{B}
 {warna}  MM         MM     M     YMM  `Mb.     MM
 {B}.JMML.     .JMML. .JML.    YM    `"bmmmdPY
 {warna}--------------------------------------------{B}
- Owner    : {C}MR.DIPTO{B}
- Guthub   : MR-DIPTO-404
- Facebook : ADRIAN DIPTO
+ Owner    : {C}Anupsantra{B}
+ Guthub   : Anupsantra 
+ Facebook : Anup Santra
  Tools    : F{C}/{B}R{C}/{B}G{M} •{warna}[{H}TRAIL{warna}]{warna}
 --------------------------------------------{B}''')
 #-------------linex def -------------#
