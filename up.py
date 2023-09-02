@@ -28,15 +28,13 @@ oks=[]
 cps=[]
 loop=0
 #-------------logo-----------------#
-logo=(f'''{B}
-`7MM"""Mq. `7MMF' `7MN.   `7MF'  .g8"""bgd
-{warna}  MM   `MM.  MM     MMN.    M  .dP'     `M
-{B}  MM   ,M9   MM     M YMb   M  dM'       `
-{warna}  MMmmdM9    MM     M  `MN. M  MM
- {B} MM         MM     M   `MM.M  MM.    `7MMF'
-{warna}  MM         MM     M     YMM  `Mb.     MM
-{B}.JMML.     .JMML. .JML.    YM    `"bmmmdPY
-{warna}--------------------------------------------{B}
+logo=(f'''
+.------..------..------..------.
+|A.--. ||N.--. ||U.--. ||P.--. |
+| (\/) || :(): || (\/) || :/\: |
+| :\/: || ()() || :\/: || (__) |
+| '--'A|| '--'N|| '--'U|| '--'P|
+`------'`------'`------'`------'
  Owner    : {C}Anupsantra{B}
  Guthub   : Anupsantra
  Facebook : Anup Santra
@@ -82,6 +80,7 @@ def BD_CLONING():
         tl=str(len(user))
         print(' TOTAL ACCOUNT : '+tl)
         print(' YOUR SIM CODE : '+code)
+        print('FAST ID CLONING✅')
         print(' PROGRESS HAS BEEN RUNNING PLEASE WAIT ')
         linex()
         for psx in user:
